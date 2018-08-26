@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1 id="title">Headsets Product Survey</h1>
+            <p id="description">Headsets market research </p>
+        </div>
+
+        <form id="survey-form" action="" method="POST">
+            <div>
+                <label for="Name">Name:</label>
+                <input type="text" id="name-label" name="user_name" placeholder="Enter Name">
+            </div>
+        
+            <div>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email-label" name="email_ad" placeholder="Enter email address">
+            </div>
+
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" id="number-label" name="age" placeholder="Enter your age">
+            </div>
+
+            <div>
+                <label for="gender">Gender:</label><br>
+                <input type="radio" name="gender" value="male"> Male<br>
+                <input type="radio" name="gender" value="female"> Female<br>
+                <input type="radio" name="gender" value="other"> Other
+            </div>
+            <div>
+                <label id="product" for="features">Please rank the following features in order of preference. (1 being the highest)</label>
+                <p>1. Price</p>
+                <select name="product-features" id="dropdown">
+                    <option value="1">1</option>
+                    <option value="1">2</option>
+                    <option value="1">3</option>
+                    <option value="1">4</option>
+                    <option value="1">5</option>
+                </select>
+                <p>2. Sound Quality</p>
+                <select name="product-features" id="dropdown">
+                    <option value="1">1</option>
+                    <option value="1">2</option>
+                    <option value="1">3</option>
+                    <option value="1">4</option>
+                    <option value="1">5</option>
+                </select>
+                <p>3. Durability</p>
+                <select name="product-features" id="dropdown">
+                    <option value="1">1</option>
+                    <option value="1">2</option>
+                    <option value="1">3</option>
+                    <option value="1">4</option>
+                    <option value="1">5</option>
+                </select>
+                <p>4. Comfort</p>
+                <select name="product-features" id="dropdown">
+                    <option value="1">1</option>
+                    <option value="1">2</option>
+                    <option value="1">3</option>
+                    <option value="1">4</option>
+                    <option value="1">5</option>
+                </select>
+                <p>5. Extra Features</p>
+                <select name="product-features" id="dropdown">
+                    <option value="1">1</option>
+                    <option value="1">2</option>
+                    <option value="1">3</option>
+                    <option value="1">4</option>
+                    <option value="1">5</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="msg">Additional Comments:</label>
+                <textarea id="msg" name="user_message"></textarea>
+            </div>
+
+            <div class="button">
+                <button id="submit" type="submit">Send your message</button>
+            </div>
+
+        </form>
+
+    </div>
+    
+</body>
+</html>
