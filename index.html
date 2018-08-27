@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin|Vollkorn" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Survey Form</title>
 </head>
@@ -37,49 +38,85 @@
                 <input type="radio" name="gender" value="other"> Other
             </div>
             <div>
-                <label id="product" for="features">Please rank the following features in order of preference. (1 being the highest)</label>
-                <p>1. Price</p>
-                <select name="product-features" id="dropdown">
+                <label id="product" for="features">1. Please rank the following features in order of preference. (1 being the highest)</label>
+            
+                <p>1. Price <select name="product-features" id="dropdown">
                     <option value="1">1</option>
                     <option value="1">2</option>
                     <option value="1">3</option>
                     <option value="1">4</option>
                     <option value="1">5</option>
-                </select>
-                <p>2. Sound Quality</p>
-                <select name="product-features" id="dropdown">
+                </select></p>
+                <p>2. Sound Quality <select name="product-features" id="dropdown">
                     <option value="1">1</option>
                     <option value="1">2</option>
                     <option value="1">3</option>
                     <option value="1">4</option>
                     <option value="1">5</option>
-                </select>
-                <p>3. Durability</p>
-                <select name="product-features" id="dropdown">
+                </select></p>
+                <p>3. Durability <select name="product-features" id="dropdown">
                     <option value="1">1</option>
                     <option value="1">2</option>
                     <option value="1">3</option>
                     <option value="1">4</option>
                     <option value="1">5</option>
-                </select>
-                <p>4. Comfort</p>
-                <select name="product-features" id="dropdown">
+                </select></p>
+                <p>4. Comfort <select name="product-features" id="dropdown">
                     <option value="1">1</option>
                     <option value="1">2</option>
                     <option value="1">3</option>
                     <option value="1">4</option>
                     <option value="1">5</option>
-                </select>
-                <p>5. Extra Features</p>
-                <select name="product-features" id="dropdown">
+                </select></p>
+                <p>5. Extra Features <select name="product-features" id="dropdown">
                     <option value="1">1</option>
                     <option value="1">2</option>
                     <option value="1">3</option>
                     <option value="1">4</option>
                     <option value="1">5</option>
-                </select>
+                </select></p>
             </div>
             
+            <div>
+                <label for="">2. Where do you usually use your headphones? (Please select all that apply)</label><br>
+                    <input type="checkbox" name="whereUse" value="Home">Home<br>
+                    <input type="checkbox" name="whereUse" value="School">School<br>
+                    <input type="checkbox" name="whereUse" value="Work" checked>Work<br>
+                    <input type="checkbox" name="whereUse" value="Gym" checked>Gym<br>
+                    <input type="checkbox" name="whereUse" value="Driving" checked>Driving<br>
+                    <input type="checkbox" name="whereUse" value="Commute" checked>Commute<br>
+                    <input type="checkbox" name="whereUse" value="Other" checked>Other:<br>
+                    <textarea name="" id="" cols="15" rows="5"></textarea>
+            </div>
+
+            <div>
+                <label for="">3. What kind of headphones do you like the most?</label><br>
+                 <input type="radio" name="hphones" value="circumaural">circumaural (have circular or ellipsoid earpads that encompass the ears)<br>
+                <input type="radio" name="hphones" value="supra-aural">supra-aural  (have pads that sit on top of the ears, rather than around them)<br>
+                <input type="radio" name="hphones" value="earbuds">earbuds (or earphones, are placed directly outside of the ear canal)<br>
+                <input type="radio" name="hphones" val)ue="in-ear">in-ear(also known as canalphones, are inserted directly into the ear canal)<br>
+            </div>
+
+            <div>
+                <label for="">4. What are the reasons make you like the headphone you chose in question 3? <br>(Please select all that apply)</label><br>
+                <input type="checkbox" id="checkbox" name="" value="appearance">Appearance<br>
+                <input type="checkbox" id="checkbox" name="" value="comfortability">Comfortability<br>
+                <input type="checkbox" id="checkbox" name="" value="function">Function<br>
+                <input type="checkbox" id="checkbox" name="" value="brand">Brand<br>
+                <input type="checkbox" id="checkbox" name="" value="price">Price<br>
+                <input type="checkbox" id="checkbox" name="" value="portability">Portability<br>
+                <input type="checkbox" id="checkbox" name="" value="other">Other<br>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+
+            <div>
+                <label for="">5. Which additional features would you like to have in a headset? <br>(Please select all that apply)</label><br>
+                <input type="checkbox" name="" value="wireless">Wireless<br>
+                <input type="checkbox" name="" value="microsdslot">Micro SD slot<br>
+                <input type="checkbox" name="" value="noisecancelling">Noise cancelling<br>
+                <input type="checkbox" name="" value="replaceable">Replaceable pieces<br>
+                <input type="checkbox" name="" value="pairing">Easily paired with computer and game consoles<br>
+            </div>
             <div>
                 <label for="msg">Additional Comments:</label>
                 <textarea id="msg" name="user_message"></textarea>
