@@ -1,9 +1,29 @@
-h1, label
+body
 {
-    font-family: 'Vollkorn', serif;
+    background: teal; 
 }
 
-h2, h3, h4, p, input, select, textarea, option
+h1
+{
+    font-family: 'Vollkorn', serif;
+    color: ivory;
+}
+
+.row p 
+{
+    font-family: 'Vollkorn', serif;
+    font-size: 25px;
+    font-weight: lighter;
+    color: ivory;
+}
+
+label
+{
+    font-family: 'Vollkorn', serif;
+    color: black;
+}
+
+h2, h3, h4, input, select, textarea, option
 {
     font-family: 'Libre Franklin',sans-serif;
 }
@@ -16,7 +36,7 @@ h2, h3, h4, p, input, select, textarea, option
 form 
 {
     margin: 0 auto;
-    width: 750px;
+    width: 600px;
     padding: 3.5em;
     border: 1px solid #CCC;
     border-radius: 1em;
@@ -24,13 +44,65 @@ form
     -moz-border-radius: 1em;
     -ms-border-radius: 1em;
     -o-border-radius: 1em;
+    background-color: lightcyan; 
 }
 
 p
-{font-size: 18px;}
+{
+    font-size: 18px;
+    margin-left: 20px;
+}
 
-input[type="radio"] {
+input[type="radio"] 
+{
     vertical-align: -6px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+input[type="checkbox"]
+{
+    vertical-align: -6px;
+    margin-left: 20px;
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+label[for="gender"]
+{
+    font-size: 18px !important;
+    font-weight: lighter;
+}
+
+label[for="where"] 
+{
+    font-weight: lighter;
+    font-size: 18px !important;
+}
+
+label[for="hphones"] 
+{
+    font-weight: lighter;
+    font-size: 17px !important;
+}
+
+label[for="features"] 
+{
+    font-weight: lighter;
+    font-size: 17px !important;
+}
+
+label[for="additional-features"] 
+{
+    font-weight: lighter;
+    font-size: 17px !important;
+}
+
+.gender
+{
+    margin-left: 100px;
+    padding: 5px;
 }
 
 ::placeholder
@@ -54,8 +126,6 @@ form div+div
 
 input 
 {
-    display: inline;
-    margin-left: 8px;
     height: 23px;
 }
 
@@ -69,24 +139,26 @@ input:valid
     border: 2px solid blue;
 }
 
+label
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
 #name-label 
 {
-    width: 322px;
+    width: 575px;
 }
 
 #email-label
 {
-    width: 235px;
+    width: 575px;
 }
 
 #number-label
 {
-    width: 40px;
-}
-
-#gender label
-{
-    font-size: 180px;
+    width: 30px;
 }
 
 input[type='number'] 
@@ -103,9 +175,10 @@ input::-webkit-inner-spin-button
 textarea 
 {
     font-size: 1em;
-    width: 300px;
+    width: 500px;
     box-sizing: border-box;
     border: 1px solid #999;
+    margin-left: 20px;
 }
 
 input:focus,

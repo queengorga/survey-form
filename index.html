@@ -17,25 +17,22 @@
 
         <form id="survey-form" action="#" method="POST">
             <div>
-                <label for="Name">Name:</label>
-                <input type="text" id="name-label" minlength="3" maxlength="12" name="user_name" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" placeholder="Enter Name">
+                <label for="Name">Name</label><br>
+                <input type="text" id="name-label" minlength="3" maxlength="12" name="user_name" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" placeholder=" Harry James Potter">
             </div>
         
             <div>
-                <label for="email">Email Address:</label>
-                <input type="email" id="email-label" name="email_ad" required pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$" placeholder="Enter email address">
+                <label for="email">Email Address</label><br>
+                <input type="email" id="email-label" name="email_ad" required pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$" placeholder=" 4 Privet Drive, Little Whinging, Surrey, England">
             </div>
 
             <div>
-                <label for="age">Age:</label>
-                <input type="number" id="number-label" step="any" name="age" min="3" max="92" required pattern="[3-9]|[1-3][0-9]|9[0-2]">
-            </div>
-
-            <div>
-                <label for="gender">Gender:</label><br>
-                <input type="radio" name="gender" id="gender" value="male"><label for="gender" style="font-size:18px">Male</label><br>
-                <input type="radio" name="gender" id="gender" value="female"><label for="gender" style="font-size:18px">Female</label><br>
-                <input type="radio" name="gender" id="gender" value="other"><label for="gender" style="font-size:18px">Other</label>
+                <label for="age">Age</label>
+                <input type="age" id="number-label" step="any" name="age" min="3" max="92" required pattern="[3-9]|[1-3][0-9]|9[0-2]">
+                <label class="gender" for="">Gender</label>
+                <input type="radio" name="gender" id="gender" value="male"><label for="gender">Male</label>
+                <input type="radio" name="gender" id="gender" value="female"><label for="gender">Female</label>
+                <input type="radio" name="gender" id="gender" value="other"><label for="gender">Other</label>
             </div>
 
             <div>
@@ -78,44 +75,44 @@
             </div>
             
             <div>
-                <label for="">2. Where do you usually use your headphones? (Please select all that apply)</label><br>
-                    <input type="checkbox" name="whereUse" value="Home">Home<br>
-                    <input type="checkbox" name="whereUse" value="School">School<br>
-                    <input type="checkbox" name="whereUse" value="Work" checked>Work<br>
-                    <input type="checkbox" name="whereUse" value="Gym" checked>Gym<br>
-                    <input type="checkbox" name="whereUse" value="Driving" checked>Driving<br>
-                    <input type="checkbox" name="whereUse" value="Commute" checked>Commute<br>
-                    <input type="checkbox" name="whereUse" value="Other" checked>Other:<br>
+                <label for="">2. Where do you usually use your headphones? <br>(Please select all that apply)</label><br>
+                    <input type="checkbox" name="whereUse" value="Home"><label for="where">Home</label><br>
+                    <input type="checkbox" name="whereUse" value="School"><label for="where">School</label><br>
+                    <input type="checkbox" name="whereUse" value="Work" checked><label for="where">Work</label><br>
+                    <input type="checkbox" name="whereUse" value="Gym" checked><label for="where">Gym</label><br>
+                    <input type="checkbox" name="whereUse" value="Driving" checked><label for="where">Driving</label><br>
+                    <input type="checkbox" name="whereUse" value="Commute" checked><label for="where">Commute</label><br>
+                    <input type="checkbox" name="whereUse" value="Other" checked><label for="where">Other</label><br>
                     <textarea name="" id="" cols="15" rows="5"></textarea>
             </div>
 
             <div>
                 <label for="">3. What kind of headphones do you like the most?</label><br>
-                 <input type="radio" name="hphones" value="circumaural">circumaural (have circular or ellipsoid earpads that encompass the ears)<br>
-                <input type="radio" name="hphones" value="supra-aural">supra-aural  (have pads that sit on top of the ears, rather than around them)<br>
-                <input type="radio" name="hphones" value="earbuds">earbuds (or earphones, are placed directly outside of the ear canal)<br>
-                <input type="radio" name="hphones" val)ue="in-ear">in-ear(also known as canalphones, are inserted directly into the ear canal)<br>
+                 <input type="radio" name="hphones" value="circumaural"><label for="hphones">circumaural (have circular or ellipsoid earpads that encompass the ears)</label><br>
+                <input type="radio" name="hphones" value="supra-aural"><label for="hphones">supra-aural (have pads that sit on top of the ears, rather than around them)</label> <br>
+                <input type="radio" name="hphones" value="earbuds"><label for="hphones">earbuds (or earphones, are placed directly outside of the ear canal)</label><br>
+                <input type="radio" name="hphones" value="in-ear"><label for="hphones">in-ear(also known as canalphones, are inserted directly into the ear canal)</label><br>
             </div>
 
             <div>
-                <label for="">4. What are the reasons make you like the headphone you chose in question 3? <br>(Please select all that apply)</label><br>
-                <input type="checkbox" id="checkbox" name="" value="appearance">Appearance<br>
-                <input type="checkbox" id="checkbox" name="" value="comfortability">Comfortability<br>
-                <input type="checkbox" id="checkbox" name="" value="function">Function<br>
-                <input type="checkbox" id="checkbox" name="" value="brand">Brand<br>
-                <input type="checkbox" id="checkbox" name="" value="price">Price<br>
-                <input type="checkbox" id="checkbox" name="" value="portability">Portability<br>
-                <input type="checkbox" id="checkbox" name="" value="other">Other<br>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <label for="">4. What are the reasons make you like the headphone you chose in question 3? (Please select all that apply)</label><br>
+                <input type="checkbox" id="checkbox" name="features" value="appearance"><label for="features">Appearance</label><br>
+                <input type="checkbox" id="checkbox" name="" value="comfortability"><label for="features">Comfortability</label><br>
+                <input type="checkbox" id="checkbox" name="" value="function"><label for="features">Function</label><br>
+                <input type="checkbox" id="checkbox" name="" value="brand"><label for="features">Brand</label><br>
+                <input type="checkbox" id="checkbox" name="" value="price"><label for="features">Price</label><br>
+                <input type="checkbox" id="checkbox" name="" value="portability"><label for="features">Portability</label><br>
+                <input type="checkbox" id="checkbox" name="" value="other"><label for="features">Other</label><br>
+                <textarea name="" id="" cols="15" rows="5"></textarea>
             </div>
 
             <div>
                 <label for="">5. Which additional features would you like to have in a headset? <br>(Please select all that apply)</label><br>
-                <input type="checkbox" name="" value="wireless">Wireless<br>
-                <input type="checkbox" name="" value="microsdslot">Micro SD slot<br>
-                <input type="checkbox" name="" value="noisecancelling">Noise cancelling<br>
-                <input type="checkbox" name="" value="replaceable">Replaceable pieces<br>
-                <input type="checkbox" name="" value="pairing">Easily paired with computer and game consoles<br>
+                <input type="checkbox" name="" value="wireless"><label for="additional-features">Wireless</label><br>
+                <input type="checkbox" name="" value="microsdslot"><label for="additional-features">Micro SD slot</label><br>
+                <input type="checkbox" name="" value="noisecancelling"><label for="additional-features">Noise Cancelling</label><br>
+                <input type="checkbox" name="" value="replaceable"><label for="additional-features">Replaceable</label><br>
+                <input type="checkbox" name="" value="pairing"><label for="additional-features">Easily paired with computer and game consoles</label><br>
             </div>
             <div>
                 <label for="msg">Additional Comments:</label>
