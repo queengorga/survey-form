@@ -36,7 +36,7 @@
             </div>
 
             <div>
-                <label id="product" for="features">1. Please rank the following features in order of preference. (1 being the highest)</label>
+                <label id="product" for="">1. Please rank the following features in order of preference. (1 being the highest)</label>
                 <p>1. Price <select name="product-features" id="dropdown">
                     <option value="1">1</option>
                     <option value="1">2</option>
@@ -107,7 +107,7 @@
             </div>
 
             <div>
-                <label for="">5. Which additional features would you like to have in a headset? <br>(Please select all that apply)</label><br>
+                <label for="">5. Which additional features would you like to have in a headset?(Please select all that apply)</label><br>
                 <input type="checkbox" name="" value="wireless"><label for="additional-features">Wireless</label><br>
                 <input type="checkbox" name="" value="microsdslot"><label for="additional-features">Micro SD slot</label><br>
                 <input type="checkbox" name="" value="noisecancelling"><label for="additional-features">Noise Cancelling</label><br>
@@ -116,11 +116,11 @@
             </div>
             <div>
                 <label for="msg">Additional Comments:</label>
-                <textarea id="msg" name="user_message"></textarea>
+                <textarea id="msg" maxlength="140" name="user_message"></textarea>
             </div>
 
             <div class="button">
-                <button id="submit" type="submit"><a href="">Send your message</a></button>
+                <button id="submit" type="submit"><a href="">Send</a></button>
             </div>
 
         </form>

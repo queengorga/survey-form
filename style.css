@@ -129,16 +129,6 @@ input
     height: 23px;
 }
 
-input:invalid 
-{
-    border: 2px solid red;
-}
-
-input:valid 
-{
-    border: 2px solid blue;
-}
-
 label
 {
     margin-top: 5px;
@@ -195,16 +185,32 @@ textarea
 
 .button 
 {
-    padding-left: 90px;
+    padding-left: 16px;
 }
 
 button 
 {
-    margin-left: .5em;
+    margin-left: 5px;
     font-family: 'Libre Franklin', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    width:100px;
+    height: 40px;
+}
+
+button:hover
+{
+    background-color: teal;
+    color: ivory;   
+}
+
+.button a 
+{
+    text-decoration: none;
+    color: inherit;
 }
