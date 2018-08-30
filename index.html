@@ -15,7 +15,7 @@
             <p id="description">Headsets market research </p>
         </div>
 
-        <form id="survey-form" action="#" method="POST">
+        <form id="surveyForm" name="survey" method="POST" onsubmit="return validate(this)">
             <div>
                 <label for="name-label">Name</label><br>
                 <input type="text" id="name-label" minlength="3" name="user_name" required pattern="[a-zA-Z0-9\s]+" placeholder=" Harry James Potter">
@@ -76,22 +76,22 @@
             
             <div>
                 <label for="">2. Where do you usually use your headphones? <br>(Please select all that apply)</label><br>
-                    <input type="checkbox" name="where" value="Home"><label for="where">Home</label><br>
-                    <input type="checkbox" name="where" value="School"><label for="where">School</label><br>
-                    <input type="checkbox" name="where" value="Work"><label for="where">Work</label><br>
-                    <input type="checkbox" name="where" value="Gym"><label for="where">Gym</label><br>
-                    <input type="checkbox" name="where" value="Driving"><label for="where">Driving</label><br>
-                    <input type="checkbox" name="where" value="Commute"><label for="where">Commute</label><br>
-                    <input type="checkbox" name="where" value="Other"><label for="where">Other</label><br>
+                    <input type="checkbox" name="where[1]" value="Home"><label for="where">Home</label><br>
+                    <input type="checkbox" name="where[2]" value="School"><label for="where">School</label><br>
+                    <input type="checkbox" name="where[3]" value="Work"><label for="where">Work</label><br>
+                    <input type="checkbox" name="where[4]" value="Gym"><label for="where">Gym</label><br>
+                    <input type="checkbox" name="where[5]" value="Driving"><label for="where">Driving</label><br>
+                    <input type="checkbox" name="where[6]" value="Commute"><label for="where">Commute</label><br>
+                    <input type="checkbox" name="where[7]" value="Other"><label for="where">Other</label><br>
                     <textarea name="" id="" cols="15" rows="5"></textarea>
             </div>
 
             <div>
                 <label for="">3. What kind of headphones do you like the most?</label><br>
-                 <input type="radio" name="hphones" value="circumaural"><label for="hphones">circumaural (have circular or ellipsoid earpads that encompass the ears)</label><br>
-                <input type="radio" name="hphones" value="supra-aural"><label for="hphones">supra-aural (have pads that sit on top of the ears, rather than around them)</label> <br>
-                <input type="radio" name="hphones" value="earbuds"><label for="hphones">earbuds (or earphones, are placed directly outside of the ear canal)</label><br>
-                <input type="radio" name="hphones" value="in-ear"><label for="hphones">in-ear(also known as canalphones, are inserted directly into the ear canal)</label><br>
+                 <input type="radio" name="hphones[1]" value="circumaural"><label for="hphones">circumaural (have circular or ellipsoid earpads that encompass the ears)</label><br>
+                <input type="radio" name="hphones[2]" value="supra-aural"><label for="hphones">supra-aural (have pads that sit on top of the ears, rather than around them)</label> <br>
+                <input type="radio" name="hphones[3]" value="earbuds"><label for="hphones">earbuds (or earphones, are placed directly outside of the ear canal)</label><br>
+                <input type="radio" name="hphones4[]" value="in-ear"><label for="hphones">in-ear(also known as canalphones, are inserted directly into the ear canal)</label><br>
             </div>
 
             <div>
@@ -120,7 +120,8 @@
             </div>
 
             <div class="button">
-                <button id="submit" type="submit"><a href="">Send</a></button>
+                <input id="button" type="submit" value="Send" name="submit">
+                
             </div>
 
         </form>
