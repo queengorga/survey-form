@@ -36,7 +36,7 @@ h2, h3, h4, input, select, textarea, option
 form 
 {
     margin: 0 auto;
-    width: 600px;
+    width: 700px;
     padding: 3.5em;
     border: 1px solid #CCC;
     border-radius: 1em;
@@ -63,16 +63,33 @@ input[type="radio"]
 input[type="checkbox"]
 {
     vertical-align: -6px;
+    width: 18px;
+    height: 18px;
     margin-left: 20px;
     margin-top: 5px;
     font-size: 15px;
     font-weight: lighter;
 }
 
-label[for="gender"]
+input[type="radio"] {
+    vertical-align: baseline;
+    width: 15px;
+    height: 15px;
+   
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+label[for="gender-title"]
 {
     font-size: 18px !important;
+    margin-left: 75px;
+}
+
+label[for="gender"] {
+    font-size: 18px !important;
     font-weight: lighter;
+    margin: 10px;
 }
 
 label[for="where"] 

@@ -1,8 +1,17 @@
-function validate(f) {
-    f = f.elements;
-    for (var c = 0, i = f.length - 1; i > -1; --i)
-        if (f[i].name && /^where\[\d+\]$/.test(f[i].name) && f[i].checked)++c;
-    if (c < 3) alert('Please select at least three places where you use headphones on Question No. 2.');
-    return c > 3;
+function validateForm() {
+    if (!validate()) {
+        alert("Select at least one checkbox");
+        return false;
+    }
+    return true
 }
 
+function validate() {
+    var c = document.getElementsByTagName('input');
+    for (var i = 0; i < c.length; i++) {
+        if (c[i].name == 'where') {
+            if (c[i].checked) { return true }
+        }
+    }
+    return false;
+}
